@@ -1,0 +1,46 @@
+{
+  "name": "turkishculture-mcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "dist/stdio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "build:mcp": "tsup src/mastra/stdio.ts --format esm --no-splitting --dts && chmod +x dist/stdio.js"
+  },
+  "keywords": [
+    "turkish",
+    "culture",
+    "mcp",
+    "mastra",
+    "ai",
+    "agent",
+    "etymology",
+    "translation"
+  ],
+  "author": "Turkish Culture MCP Developer",
+  "license": "ISC",
+  "description": "Turkish Culture MCP Server - Türk kültürü, kelime analizi, etimoloji ve çeviri hizmetleri sunan Mastra MCP server'ı",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.18",
+    "@ai-sdk/groq": "^1.2.9",
+    "@mastra/core": "^0.10.1",
+    "@mastra/libsql": "^0.10.0",
+    "@mastra/mcp": "^0.10.1",
+    "@mastra/memory": "^0.10.1",
+    "nisanyanmap": "^1.0.0",
+    "tdk-all-api": "^1.0.0",
+    "zod": "^3.25.30"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.23",
+    "mastra": "^0.10.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.8.3"
+  }
+}
